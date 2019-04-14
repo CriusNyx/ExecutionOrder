@@ -23,7 +23,11 @@ public enum ExecutionOrderValue
 {
     Earliest = -20,
     Early = -10,
+    PreLogic = Logic - 1,
     Logic = 0,
+    PostLogic = Logic + 1,
+    PrePhysics = Physics - 1,
     Physics = 10,
+    PostPhysics = Physics + 1,
     Camera = 20,
 }
