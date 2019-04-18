@@ -21,14 +21,15 @@ public class ExecutionOrderAttribute : Attribute
 
 public enum ExecutionOrderValue
 {
-    Earliest = Early - 10,
-    Early = Logic - 10,
-    PreLogic = Logic - 1,
+    Earliest = -20,
+    Early = -10,
+    PreLogic = -1,
     Logic = 0,
-    PostLogic = Logic + 1,
-    PrePhysics = Physics - 1,
-    Physics = Logic + 10,
-    PhysicsStep = Physics + 1,
-    PostPhysics = PhysicsStep + 1,
-    Camera = PostPhysics + 10,
+    PostLogic = 1,
+    PrePhysics = 9,
+    Physics = 10,
+    PhysicsStep = 11,
+    PostPhysics = 12,
+    Camera = 20,
+    PostCamera = 21,
 }
